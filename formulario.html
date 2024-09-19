@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato - Loja de Maquiagem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="beauty.html">Home</a></li> 
+                <li><a href="beauty.html#produtos">Produtos</a></li> 
+                <li><a href="beauty.html#sobre">Sobre Nós</a></li>
+                <li><a href="formulario.html">Contato</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Envie sua mensagem</h2>
+        <form action="#" method="post">
+            <table>
+                <tr>
+                    <td><label for="nome">Nome:</label></td><td><input type="text" id="nome" name="nome" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">E-mail:</label></td><td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="telefone">Telefone:</label></td><td><input type="tel" id="telefone" name="telefone" required></td>
+                </tr>
+                <tr>
+                    <td><label for="data">Data de Contato:</label></td> <td><input type="date" id="data" name="data" required></td>
+                </tr>
+                <tr>
+                    <td><label for="assunto">Assunto:</label></td>
+                    <td>
+                        <select id="assunto" name="assunto" required>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="reclamacao">Reclamação</option>
+                            <option value="reclamacao">Outro</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mensagem">Mensagem:</label></td><td><textarea id="mensagem" name="mensagem" rows="5" required></textarea></td>
+                </tr>
+                <tr>
+                    <td><label>Preferência de Contato:</label></td>
+                    <td>
+                        <input type="radio" id="email_pref" name="preferencia_contato" value="email">
+                        <label for="email_pref">E-mail</label>
+                        <input type="radio" id="telefone_pref" name="preferencia_contato" value="telefone">
+                        <label for="telefone_pref">Telefone</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="newsletter">Deseja receber nossa promoções por e-mail?</label></td>
+                    <td>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="sim"> Sim
+                    </td>
+                </tr>
+            </table>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nicoly Santos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
